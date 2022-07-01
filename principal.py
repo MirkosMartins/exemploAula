@@ -2,8 +2,8 @@ import streamlit as st
 import pandas as pd
 
 valor = pd.read_csv('./data.csv',sep=';')#lê o valor de um csv
-
-contador = valor[0]
+cont = valor['valor']
+contador = cont[0]
 
 st.text('APLICAÇÃO CONTADOR')
 st.text_input('Insira seu nome: ',key='nome')
